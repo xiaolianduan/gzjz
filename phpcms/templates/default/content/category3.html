@@ -1,0 +1,58 @@
+
+{template "content","header"}
+
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/list.css">
+<!-- 主要内容开始-->
+<style>
+    .contend-bottom-left li:first-child a:first-child{
+        background:#00A3E6;
+        color: white;
+    }
+</style>
+<!-- 主要内容开始-->
+{template "content","left"}
+<div class="contend-bottom-right">
+    <div class="contend-bottom-title">{$CATEGORYS[$catid][catname]}</div>
+    {pc:content action="hits" catid="$catid" num="10" order="views DESC" cache="3600"}
+    <ul class="yewubox">
+        <img src="{IMG_PATH}gzjz_img/paperBn.jpg" alt="">
+        {php $a=0}
+        {loop $data $r}
+        {if $a==0}
+        <li class="yewu" style="margin-top:40px">
+            <a href="{$r[url]}" class="tt"><span>2013-07-18</span>&nbsp;·&nbsp;{$r[title]}</a>
+        </li>
+        {/if}
+        {if $a>0}
+        <li class="yewu">
+            <a href="{$r[url]}" class="tt"><span>2013-07-18</span>&nbsp;·&nbsp;{$r[title]}</a>
+        </li>
+        {/if}
+        {$a++}
+        {/loop}
+        <div class="page">
+            <span>共 96条信息 | 1 / 10</span>
+            <span>上一页</span>
+            <span style="background:#999999;border:1px solid #cadcdc;color:white">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>next</span>
+            Go: <input type="text" id="page-text">
+        </div>
+    </ul>
+    {/pc}
+</div>
+</div>
+</div>
+</div>
+
+
+
+{template "content","footer"}

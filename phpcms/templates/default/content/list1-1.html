@@ -1,0 +1,48 @@
+
+{template "content","header"}
+
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/base.css">
+<!-- 主要内容开始-->
+{template "content","left"}
+<style>
+    .list-content{
+        padding: 15px 0;
+        font-family: "宋体";
+    }
+    .list-content .jjtitle{
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        color: #000;
+    }
+    .list-content p{
+        text-indent: 2em;
+        line-height: 25px;
+    }
+    .list-content span{
+        font-weight: normal;
+        display:inline-block;
+        margin-right:30px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: "宋体";
+        text-align: left;
+    }
+
+</style>
+            <div class="contend-bottom-right">
+                <div class="contend-bottom-title">{$CATEGORYS[$catid][catname]}</div>
+                {pc:content action="lists" catid="$catid" moreinfo="1" order="listorder DESC" num="5"}
+                    <div class="list-content">
+                        {loop $data $r}
+                            {$r[content]}
+                        {/loop}
+                    </div>
+                {/pc}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{template "content","footer"}

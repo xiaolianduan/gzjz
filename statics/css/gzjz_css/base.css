@@ -1,0 +1,25 @@
+/*主要内容开始*/
+.contend-bottom-right{
+	padding-bottom: ;
+	width: 640px;
+	height: auto;
+	padding: 10px 34px;
+	float: right;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+.contend-bottom-title{
+	line-height: 50px;
+	font-size: 18px;
+	color: #00a3e6;
+	border-bottom: 1px solid #ccc;
+}
+.contend-bottom-contend .gsjj-title{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+.gsjj-content{
+	text-indent:2em;
+	line-height: 24px;
+}
+

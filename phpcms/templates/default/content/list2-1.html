@@ -1,0 +1,50 @@
+
+{template "content","header"}
+
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/culture.css">
+
+{template "content","left"}
+
+<div class="contend-bottom-right">
+    <div class="contend-bottom-title">{$CATEGORYS[$catid][catname]}</div>
+    {pc:content action="lists" catid="$catid" moreinfo="1" order="listorder DESC" num="5"}
+    <ul class="yewubox">
+        {loop $data $r}
+        <li class="yewu">
+            <div class="yewuimgs">
+                <a href="{$r[url]}" ><img src="{$r[thumb]}" alt=""></a>
+            </div>
+            <div class="yewuson">
+                <p class="yewuson-title"><a href="{$r[url]}" class="yewusona" target="_blank">{$r[title]}</a></p>
+                <p class="yewuson-contend">
+                    {$r[description]}...
+                </p>
+                <p class="yewuson-contend2">
+                    承建单位：广州市第四建筑工程有限公司
+                </p>
+            </div>
+        </li>
+        {/loop}
+        <div class="page">
+            <span>共86项  |  共9页  |  当前第1页</span>
+            <span>上一页</span>
+            <span style="background:#dff9f8;border:1px solid #83e7e4;color:#83e7e4">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>下一页</span>
+        </div>
+    </ul>
+    {/pc}
+</div>
+</div>
+</div>
+</div>
+
+
+{template "content","footer"}

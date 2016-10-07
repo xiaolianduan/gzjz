@@ -1,0 +1,42 @@
+/*主要内容开始*/
+
+.contend-bottom-right{
+	width: 660px;
+	height: 974px;
+	padding: 10px 34px;
+	float: right;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+.contend-bottom-right img{
+	width: 660px;
+}
+.contend-bottom-title{
+	line-height: 50px;
+	font-size: 18px;
+	color: #00a3e6;
+	border-bottom: 1px solid #ccc;
+}
+#tops{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.gzs{
+	font-size: 18px;
+	text-align: center;
+	line-height: 26px;
+}
+.niand{
+	font-size: 18px;
+	text-align: center;
+	line-height: 26px;
+	margin-left: 120px;
+	margin-bottom: 25px;
+}
+.contend-bottom-contend a{
+	color: #333333;
+}
+.contend-bottom-contend a:hover{
+	color: #008BD0;
+}
+
+

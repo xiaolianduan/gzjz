@@ -1,0 +1,45 @@
+
+{template "content","header"}
+
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/innovate.css">
+<!-- 主要内容开始-->
+{template "content","left"}
+            <div class="contend-bottom-right">
+                <div class="contend-bottom-title">{$CATEGORYS[$catid][catname]}</div>
+                {pc:content action="hits" catid="$catid" num="20" order="views DESC" cache="3600"}
+                <ul class="yewubox">
+                    <img src="{IMG_PATH}gzjz_img/kjdtPic1.jpg" alt="">
+                    {php $a=0}
+                    {loop $data $r}
+                    {if $a==0}
+                        <li class="yewu" style="margin-top:20px">
+                            <a href="{$r[url]}"  class="tt"><span></span>{$r[title]}</a>
+                            <p>2013-07-18</p>
+                        </li>
+                    {/if}
+                    {if $a>0}
+                        <li class="yewu">
+                            <a href="{$r[url]}"  class="tt"><span></span>{$r[title]}</a>
+                            <p>2013-07-18</p>
+                        </li>
+                    {/if}
+                    {$a++}
+                    {/loop}
+                    <div class="page">
+                        <span>共 38条信息 | 1 / 4 </span>
+                        <span>上一页</span>
+                        <span style="background:#999999;border:1px solid #cadcdc;color:white" class="page-co">1</span>
+                        <span class="page-co">2</span>
+                        <span class="page-co">3</span>
+                        <span class="page-co">4</span>
+                        &nbsp;Go:&nbsp;
+                        <input type="text" id="gos">
+                    </div>
+                </ul>
+                {/pc}
+            </div>
+        </div>
+    </div>
+</div>
+
+{template "content","footer"}

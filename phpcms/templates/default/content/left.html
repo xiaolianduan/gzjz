@@ -1,0 +1,38 @@
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/left.css">
+<div class="contendbox">
+    <div class="contend">
+        <div class="contend-top">
+            <div class="contend-top-left">{$CATEGORYS[$top_parentid][catname]}</div>
+            <div class="contend-top-right">
+                <span><img src="{IMG_PATH}gzjz_img/dwbz.png"> 当前位置:&nbsp;</span>
+                <a href="">&nbsp;首页</a> &gt;
+                <a href="">&nbsp;{$CATEGORYS[$top_parentid][catname]}</a>
+                {if $catid>14}
+                    &gt;&nbsp;
+                    {$CATEGORYS[$catid][catname]}
+                {/if}
+            </div>
+        </div>
+        <div class="contend-bottom">
+            {pc:content action="category" catid="$CATEGORYS[$top_parentid][catid]" num="25" siteid="$siteid" order="listorder ASC"}
+            <ul class="contend-bottom-left">
+                {loop $data $r}
+                <li id={if $r[catid]==$catid}checked{/if}><a href="{$r[url]}" class="blue">&nbsp;·&nbsp;{$r[catname]}<span >&gt;&gt;</span></a>
+                    {pc:content action="category" catid="$r[catid]" num="25" siteid="$siteid" order="listorder ASC"}
+                    <dl id="three">
+                        {loop $data $d}
+                        <dd><a href="{$d[url]}">&nbsp;&nbsp;&nbsp; - {$d[catname]}</a>
+                            {pc:content action="category" catid="$d[catid]" num="25" siteid="$siteid" order="listorder ASC"}
+                            {loop $data $v}
+                            <p><a href="{$v[url]}" id="{if $v[catid]==$catid}mingreen{/if}"> - {$v[catname]}</a></p>
+                            {/loop}
+                            {/pc}
+                        </dd>
+                        {/loop}
+                    </dl>
+                    {/pc}
+                </li>
+                {/loop}
+            </ul>
+            {/pc}
+

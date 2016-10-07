@@ -1,0 +1,19 @@
+
+{template "content","header"}
+
+<link rel="stylesheet" type="text/css" href="{CSS_PATH}gzjz_css/culture.css">
+
+{template "content","left"}
+            <div class="contend-bottom-right">
+                <div class="contend-bottom-title">主营业务</div>
+                <div class="up-down">
+                    <strong>上一篇：</strong><a href="{$previous_page[url]}">{$previous_page[title]}</a><br />
+                    <strong>下一篇：</strong><a href="{$next_page[url]}">{$next_page[title]}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{template "content","footer"}

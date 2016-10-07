@@ -1,0 +1,92 @@
+
+/*主要内容开始*/
+.contendbox{
+	width: 100%;
+	height: 1070px;
+	margin-top: 92px;
+	background: url(../../images/gzjz_img/web_conTop.jpg) no-repeat center -94px;
+}
+.contend{
+	width: 970px;
+	height: 100%;
+	margin: 0 auto;
+}
+.contend-top{
+	width: 100%;
+	height: 40px;
+	padding-top: 70px;
+}
+.contend-top-left{
+	font-size: 24px;
+	font-weight: bold;
+	color: #1983d5;
+	float: left;
+	padding-left: 15px;
+}
+.contend-top-right{
+	float: right;
+	line-height: 40px;
+}
+.contend-top-right span{
+	color: #009ee4;
+}
+.contend-top-right a{
+	color: #333;
+}
+.contend-top-right a:hover{
+	color: #009ee4;
+}
+
+.contend-bottom{
+	width: 100%;
+	height: 960px;
+}
+.contend-bottom-left{
+	width: 185px;
+	height: 280px;
+	float: left;
+	padding: 15px;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+.contend-bottom-left li{
+	width: 100%;
+	line-height: 30px;
+	border-top: 1px dashed #ccc;
+	cursor: pointer;
+	position: relative;
+}
+.contend-bottom-left li:hover{
+	background: #00a3e6;
+	color: white;
+}
+.contend-bottom-left li span{
+	position: absolute;
+	right: 15px;
+}
+#checked{
+	background: #00a3e6;
+	color: white;
+}
+.contend-bottom-left #checked:hover{
+	background: #00a3e6;
+	color: white;
+}
+.contend-bottom-right{
+	width: 660px;
+	height: 500px;
+	padding: 10px 34px;
+	float: right;
+	box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+.contend-bottom-title{
+	line-height: 50px;
+	font-size: 18px;
+	color: #00a3e6;
+	border-bottom: 1px solid #ccc;
+}
+.contend-bottom-contend{
+	margin-top: 20px;
+}
+.contend-bottom-contend p{
+	line-height: 26px;
+}

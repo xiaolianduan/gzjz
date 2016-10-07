@@ -1,0 +1,72 @@
+<!-- 友情链接开始 -->
+	<div class="footer">
+		<div class="linkbox">
+			<div class="linkson">
+				<select name="" id="">
+					<option value="">各级建设机关</option>
+					<option value="">建设部</option>
+					<option value="">粤建网</option>
+					<option value="">广州市国土房管理局</option>
+					<option value="">广州建委</option>
+					<option value="">广州市规划局</option>
+				</select>
+				<select name="" id="">
+					<option value="">集团下属企业</option>
+					<option value="">市政集团</option>
+					<option value="">总承包集团</option>
+					<option value="">中广国际</option>
+					<option value="">一建公司</option>
+					<option value="">二建公司</option>
+					<option value="">三建公司</option>
+					<option value="">四建公司</option>
+					<option value="">机施集团</option>
+					<option value="">机安公司</option>
+					<option value="">建材公司</option>
+					<option value="">建科院</option>
+					<option value="">铝制公司</option>
+					<option value="">恒盛公司</option>
+					<option value="">盾建公司</option>
+					<option value="">建工设计院</option>
+				</select>
+				<select name="" id="">
+					<option value="">行业网站</option>
+					<option value="">筑龙网</option>
+					<option value="">广州建筑业联合会</option>
+					<option value="">中国施工企业管理协会网</option>
+					<option value="">中国建筑业协会</option>
+				</select>
+				<div class="linkson-right">
+					{pc:content action="category"  catid="51"  num="25"  order="listorder ASC"}
+						{loop $data $r}
+							<div class="linkson-right">
+								<a href="{$r[url]}" target="_blank"></a>
+							</div>
+						{/loop}
+					{/pc}
+					<div class="linkson-right6"></div>
+					<div class="linkson-right7">69</div>
+				</div>
+			</div>
+		</div>
+		<!-- 版权开始 -->
+		<div class="footbox">
+			<p>Copyright(c)2013 广州市建筑集团有限公司 | <a href="{WEB_PATH}index.php?m=content&c=index&a=lists&catid=42">联系我们</a></p>
+			<p>
+				<img src="images/30.gif" alt="">
+				<img src="images/31.png" alt="">
+				{pc:content action="category"  catid="57"  num="25"  order="listorder ASC"}
+				{loop $data $r}
+					<a href="{$r[url]}" target="_blank">{$r[catname]}</a>
+				{/loop}
+				{/pc}
+			</p>
+		</div>
+
+
+		<!-- 固定定位开始 -->
+		<div class="fixed">
+			<img src="{IMG_PATH}gzjz_img/top1.gif" alt="">
+		</div>
+	</div>
+</body>
+</html>

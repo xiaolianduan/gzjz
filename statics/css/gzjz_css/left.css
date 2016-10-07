@@ -1,0 +1,92 @@
+.contendbox{
+    width: 100%;
+    height: auto;
+    margin-top: 92px;
+    background: url(../../images/gzjz_img/web_conTop.jpg) no-repeat center -94px;
+}
+.contend{
+    width: 970px;
+    height: 100%;
+    margin: 0 auto;
+}
+.contend-top{
+    width: 100%;
+    height: 40px;
+    padding-top: 70px;
+}
+.contend-top-left{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1983d5;
+    float: left;
+    padding-left: 15px;
+}
+.contend-top-right{
+    float: right;
+    line-height: 40px;
+}
+.contend-top-right span{
+    color: #009ee4;
+}
+.contend-top-right a{
+    color: #333;
+}
+.contend-top-right a:hover{
+    color: #009ee4;
+}
+
+/*左导航*/
+.contend-bottom{
+    width: 100%;
+    height: auto;
+}
+.contend-bottom-left{
+    width: 185px;
+    height: auto;
+    float: left;
+    padding: 15px;
+    box-shadow:0 0 3px rgba(0,0,0,0.3);
+}
+.contend-bottom-left li{
+    width: 100%;
+    line-height: 30px;
+    border-top: 1px dashed #ccc;
+    cursor: pointer;
+    position: relative;
+}
+.contend-bottom-left li p{
+    width: 150px;
+    padding-left: 35px;
+}
+.contend-bottom-left li p:hover{
+    color: #00a3e6;
+}
+.contend-bottom-left li span{
+    position: absolute;
+    right: 15px;
+}
+.contend-bottom a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.contend-bottom .blue:hover{
+    display: block;
+    width: 100%;
+    background: #00a3e6;
+    color: white;
+}
+#checked .blue{
+    background: #00a3e6;
+    color: white;
+}
+.contend-bottom li dd{
+    text-indent:2em;
+}
+.contend-bottom li dd a:hover{
+    color:#5BB0E2;
+}
+#mingreen{
+    color:#5BB0E2;
+}

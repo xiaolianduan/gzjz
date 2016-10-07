@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广州建筑集团有限公司</title>
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH.'gzjz_css/public.css'?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH.'gzjz_css/index.css'?>">
+	<script type="text/javascript" src="<?php echo JS_PATH.'gzjz_js/jquery.js'?>"></script>
+	<script type="text/javascript" src="<?php echo JS_PATH.'gzjz_js/animate.js'?>"></script>
+	<script type="text/javascript" src="<?php echo JS_PATH.'gzjz_js/public.js'?>"></script>
+</head>
+<body>
+<!-- 顶部导航开始 -->
+<div class="header">
+<div class="topnavbox">
+	<div class="topnv-son">
+		<div class="searchbox">
+			<input type="text" value="请输入关键字"  id="search">
+			<a href="">ENGLISH</a>
+		</div>
+		<ul class="topnav">
+			<li class="lis">
+				<a href="{siteurl($siteid)}" class="lis2">首页</a>
+				<dl class="twonav" style="opacity: 0">
+				</dl>
+			</li>
+		{php $a=9}
+		{pc:content action="category" catid="0" num="25"  order="listorder ASC"}
+			{loop $data $r}
+			<li class="lis">
+				<a href="{$r[url]}" class= {if $r[catid]==$top_parentid}lis2{/if}>{$r[catname]}</a>
+				<dl class="twonav">
+					{pc:content action="category"  catid="$r[catid]"  num="25"  order="listorder ASC"}
+						{loop $data $d}
+							<dd><a href="{$d[url]}">{$d[catname]}</a></dd>
+						{/loop}
+					{/pc}
+				</dl>
+				{$a++}
+			</li>
+			{/loop}
+		{/pc}
+		</ul>
+	</div>
+</div>
+</div>
